@@ -1,0 +1,88 @@
+Web Search App – Requirements Document & Project Plan
+=====================================================
+
+1. Project Overview
+-------------------
+We are developing a smartphone and browser-based web search application 
+that searches a specific website and returns the most relevant results. 
+The app will feature advanced filtering, keyword highlighting, and 
+AI-driven search suggestions.
+
+2. Functional Requirements
+--------------------------
+• Website-Specific Search
+   - User can input a search query.
+   - App searches only within the specified website’s content.
+   - Display results ranked by relevance.
+
+• Result Display
+   - Highlight keywords in results.
+   - Show snippet/preview of matching content.
+   - Provide clickable links to the source page.
+
+• Filtering & Sorting
+   - Filter by date, category, or content type.
+   - Sort by relevance or newest first.
+
+• AI-Driven Suggestions
+   - Suggest related search queries.
+   - Offer autocomplete as user types.
+
+• Multi-Platform Support
+   - Native mobile apps for iOS (latest) and Android (latest).
+   - Responsive web app for desktop & mobile browsers.
+
+3. Non-Functional Requirements
+------------------------------
+• Performance: Search results should load within 2 seconds 
+  on standard broadband.
+• Usability: Clean, intuitive, and minimal UI. 
+  Consistent design across devices.
+• Compatibility: 
+  - Mobile: iOS 17+ and Android 14+.
+  - Web: Latest versions of Chrome, Safari, Firefox, Edge.
+• Security: HTTPS encryption. Secure API communication.
+• Scalability: Support up to 100,000 searches per day 
+  without performance loss.
+
+4. BDD Example Scenarios
+------------------------
+Feature: Website-specific search
+  Scenario: User searches for a keyword
+    Given the user is on the search page
+    When the user enters "arc reactor" and presses Search
+    Then the app should display a list of pages from the specified website 
+    containing "arc reactor"
+    And highlight the keyword "arc reactor" in the results
+
+Feature: AI-driven suggestions
+  Scenario: User begins typing a search term
+    Given the user is on the search page
+    When the user types "Iron M"
+    Then the app should display suggestions such as 
+    "Iron Man", "Iron Man suit", "Iron Man 2"
+
+ 
+5.	Project Plan
+
++-----+-------------------------------------------+----------------------+----------------------------------------------+
+| No. | Phase / Task                              | Duration             | Deliverable                                  |
++-----+-------------------------------------------+----------------------+----------------------------------------------+
+| 1   | Requirements & Design                     | Aug 4 – Aug 15       | Approved Requirements Doc & Wireframes       |
+| 2   | Backend Development (Search API, AI sugg.)| Aug 16 – Sept 15     | Search API ready & tested                    |
+| 3   | Frontend Development (Web & Mobile UI)    | Sept 16 – Oct 15     | Functional UI for all platforms              |
+| 4   | Integration & Testing (BDD/TDD)           | Oct 16 – Nov 15      | Fully tested integrated system               |
+| 5   | Beta Release                              | Nov 16 – Nov 30      | Beta version shared with client              |
+| 6   | Feedback & Fixes                          | Dec 1 – Dec 15       | Stable release candidate                     |
+| 7   | Final Deployment                          | Dec 20               | Production release                           |
++-----+-------------------------------------------+----------------------+----------------------------------------------+
+
+6.	Deliverables
+-----------------------------
+•	Detailed Requirements Document
+•	Wireframes & UI mockups
+•	Backend Search API with AI suggestion module
+•	Native iOS & Android apps
+•	Responsive Web Application
+•	Test scripts (BDD & TDD)
+•	Final Deployment Package
